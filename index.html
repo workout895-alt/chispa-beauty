@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Chispa — Салон красоты & Барбершоп в Алматы | ул. Сакена Жунисова, 2/23</title>
-  <meta name="description" content="Премиальный салон красоты и барбершоп Chispa в Алматы (Наурызбайский р-н, ЖК Alma City). Ногтевой сервис, ресницы, брови, мужские стрижки и борода. Ежедневно 10:00–21:00. Запись в WhatsApp +7 775 549 9969.">
-  <meta name="keywords" content="салон красоты алматы, барбершоп алматы, chispa алматы, маникюр жунисова, наращивание ресниц алматы, мужская стрижка шугыла, алма сити салон">
+  <title>Chispa — Студия стрижек, окрашивания & Барбершоп в Алматы | ул. Сакена Жунисова, 2/23</title>
+  <meta name="description" content="Премиальная студия стрижек, колористики и мужской барбершоп Chispa в Алматы (Наурызбайский р-н, ЖК Alma City). Женские и мужские стрижки, сложное окрашивание, борода и уход за волосами. Ежедневно 10:00–21:00. Запись в WhatsApp +7 775 549 9969.">
+  <meta name="keywords" content="салон волос алматы, стрижки алматы, барбершоп алматы, chispa алматы, сложное окрашивание алматы, мужская стрижка жунисова, аиртач алматы">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Chispa — Салон красоты & Барбершоп в Алматы">
-  <meta property="og:description" content="Полный спектр бьюти-услуг для женщин и мужчин в Алматы: маникюр, педикюр, ресницы, брови, стрижки и борода. Запись в WhatsApp!">
+  <meta property="og:title" content="Chispa — Студия стрижек, окрашивания & Барбершоп в Алматы">
+  <meta property="og:description" content="Женский зал стрижек и колористики, а также мужской Chispa Barbershop. Точная форма, окрашивание и уход за волосами!">
   <meta property="og:image" content="assets/chispa_logo.jpg">
   <meta name="theme-color" content="#0d0e12">
 
@@ -310,15 +310,6 @@
       font-size: 13px;
     }
 
-    .burger-btn {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 6px;
-      color: var(--text-main);
-    }
-
     /* HERO SECTION */
     .hero {
       position: relative;
@@ -435,7 +426,7 @@
       position: relative;
       border-radius: var(--radius-md);
       overflow: hidden;
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 1 / 1;
       margin-bottom: 20px;
       background: #0d0e12;
     }
@@ -465,7 +456,7 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: var(--gold-light);
-      background: rgba(14, 15, 20, 0.8);
+      background: rgba(14, 15, 20, 0.85);
       border: 1px solid var(--border-color);
       padding: 4px 10px;
       border-radius: var(--radius-pill);
@@ -533,7 +524,7 @@
 
     .advantages-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 24px;
     }
 
@@ -579,7 +570,7 @@
       line-height: 1.55;
     }
 
-    /* SERVICES & PRICING (INTERACTIVE TABS) */
+    /* SERVICES & PRICING (HAIR ONLY) */
     .pricing {
       padding: 90px 0;
       position: relative;
@@ -590,7 +581,7 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 12px;
       margin-bottom: 36px;
     }
 
@@ -598,7 +589,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 12px 22px;
+      padding: 13px 26px;
       background: var(--bg-surface);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-pill);
@@ -743,7 +734,7 @@
       font-size: 13px;
     }
 
-    /* WORKS / PORTFOLIO */
+    /* WORKS / PORTFOLIO (3 HAIR VISUALS WITHOUT FACES) */
     .works {
       padding: 80px 0;
       background: var(--bg-surface);
@@ -754,7 +745,7 @@
     .works-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 24px;
       margin-bottom: 36px;
     }
 
@@ -832,7 +823,7 @@
     }
 
     .work-body {
-      padding: 16px 18px;
+      padding: 18px 20px;
       display: flex;
       flex-direction: column;
       gap: 12px;
@@ -840,7 +831,7 @@
 
     .work-title {
       font-family: var(--font-serif);
-      font-size: 18px;
+      font-size: 19px;
       font-weight: 600;
       color: var(--text-main);
       line-height: 1.3;
@@ -1242,7 +1233,10 @@
         grid-template-columns: repeat(2, 1fr);
       }
       .works-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
       }
       .contacts-grid {
         grid-template-columns: 1fr;
@@ -1256,17 +1250,8 @@
       .header-hours {
         display: none;
       }
-      .burger-btn {
-        display: block;
-      }
       .advantages-grid {
         grid-template-columns: 1fr;
-      }
-      .works-grid {
-        grid-template-columns: 1fr;
-        max-width: 440px;
-        margin-left: auto;
-        margin-right: auto;
       }
       .services-grid {
         grid-template-columns: 1fr;
@@ -1292,12 +1277,12 @@
           <img src="assets/chispa_logo.jpg" alt="Chispa Logo" class="logo-img">
           <div class="brand-text-block">
             <span class="brand-name">CHISPA</span>
-            <span class="brand-sub">Салон красоты & Барбершоп · Алматы</span>
+            <span class="brand-sub">Студия стрижек & Барбершоп · Алматы</span>
           </div>
         </a>
 
         <ul class="nav-menu">
-          <li><a href="#services" class="nav-link">Услуги и цены</a></li>
+          <li><a href="#services" class="nav-link">Услуги волос</a></li>
           <li><a href="#advantages" class="nav-link">Преимущества</a></li>
           <li><a href="#works" class="nav-link">Работы</a></li>
           <li><a href="#contacts" class="nav-link">Контакты</a></li>
@@ -1308,7 +1293,7 @@
             <span class="hours-status"><span class="hours-dot"></span> Открыто сейчас</span>
             <span class="hours-time">10:00 – 21:00 ежедневно</span>
           </div>
-          <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20Chispa" target="_blank" rel="noopener" class="btn btn-wa header-wa-btn">
+          <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83%20%D0%B2%20Chispa" target="_blank" rel="noopener" class="btn btn-wa header-wa-btn">
             <span>Записаться</span>
           </a>
         </div>
@@ -1324,20 +1309,20 @@
         
         <div class="hero-content">
           <div class="hero-badge-wrap">
-            <span>✨</span> Премиальный сервис · Алматы · ЖК Alma City
+            <span>✨</span> Студия волос & Барбершоп · Алматы · ЖК Alma City
           </div>
           <h1 class="hero-title">
-            Пространство стиля, заботы и эстетики <span>Chispa</span>
+            Пространство безупречных стрижек, окрашивания и ухода <span>Chispa</span>
           </h1>
           <p class="hero-desc">
-            Женский зал и профессиональный барбершоп под одной крышей. Ногтевой сервис, наращивание и ламинирование ресниц, брови, а также мужские стрижки и королевское бритье. Принимаем ежедневно с 10:00 до 21:00.
+            Женский зал стрижек и колористики, а также профессиональный мужской Chispa Barbershop. Точная геометрия формы, бережное сложное окрашивание и премиальный уход за волосами ежедневно с 10:00 до 21:00.
           </p>
           <div class="hero-actions">
-            <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D1%81%D0%B0%D0%BB%D0%BE%D0%BD%20Chispa" target="_blank" rel="noopener" class="btn btn-gold">
+            <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20Chispa%20%D0%BD%D0%B0%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%BE%D0%BB%D0%BE%D1%81" target="_blank" rel="noopener" class="btn btn-gold">
               <span>Записаться в WhatsApp</span>
             </a>
             <a href="#services" class="btn btn-outline">
-              <span>Смотреть прайс-лист (46 услуг)</span>
+              <span>Смотреть прайс на волосы (24 услуги)</span>
             </a>
           </div>
           <div class="hero-chips">
@@ -1348,7 +1333,7 @@
               <span>⏰</span> <strong>10:00 – 21:00</strong> ежедневно
             </div>
             <div class="hero-chip">
-              <span>💎</span> <strong>Женский зал + Барбершоп</strong>
+              <span>✂️</span> <strong>Женский зал + Барбершоп</strong>
             </div>
           </div>
         </div>
@@ -1356,15 +1341,15 @@
         <div class="hero-visual">
           <div class="hero-card">
             <div class="hero-card-img-wrap">
-              <img src="assets/hero_beauty.jpg" alt="Chispa Beauty & Barbershop" class="hero-card-img">
+              <img src="assets/work_hair_balayage.jpg" alt="Chispa Hair Studio & Barbershop" class="hero-card-img">
               <div class="hero-card-overlay">
-                <span class="hero-card-tag">Beauty & Grooming Studio</span>
+                <span class="hero-card-tag">Hair Studio & Barbershop</span>
               </div>
             </div>
             <div class="hero-card-info">
               <div>
-                <h3 class="hero-card-title">Chispa Beauty Space</h3>
-                <p class="hero-card-sub">Премиальный уход без очередей по записи</p>
+                <h3 class="hero-card-title">Chispa Hair Space</h3>
+                <p class="hero-card-sub">Индивидуальный подбор формы и цвета волос</p>
               </div>
               <a href="https://2gis.kz/almaty/firm/70000001117127302" target="_blank" rel="noopener" class="btn btn-outline" style="padding: 8px 14px; font-size: 12px;">
                 2ГИС ↗
@@ -1376,7 +1361,7 @@
             <img src="assets/chispa_logo.jpg" alt="Chispa Avatar" class="floating-avatar">
             <div class="floating-text">
               <strong>Chispa Almaty</strong>
-              <span>★ 46+ услуг красоты</span>
+              <span>★ Стрижки · Цвет · Борода</span>
             </div>
           </div>
         </div>
@@ -1390,570 +1375,62 @@
     <div class="container">
       <div class="section-header">
         <div class="section-badge">Преимущества</div>
-        <h2 class="section-title">Почему клиенты выбирают Chispa</h2>
-        <p class="section-desc">Сочетание женской бьюти-эстетики и мужского барберинга с бескомпромиссным качеством сервиса.</p>
+        <h2 class="section-title">Почему волосы доверяют Chispa</h2>
+        <p class="section-desc">Экспертный подход к стрижкам, бережное отношение к здоровью волос и атмосфера без суеты.</p>
       </div>
 
       <div class="advantages-grid">
         <div class="adv-card">
-          <div class="adv-icon-wrap">💎</div>
-          <h3 class="adv-title">Два зала в одном месте</h3>
-          <p class="adv-desc">Полный женский сервис (маникюр, педикюр, ресницы, брови) и отдельный стильный мужской Chispa Barbershop.</p>
+          <div class="adv-icon-wrap">✂️</div>
+          <h3 class="adv-title">Женский зал & Барбершоп</h3>
+          <p class="adv-desc">Отдельные зоны для женщин и мужчин. Профессиональная женская колористика и мужской фейд-барберинг под одной крышей.</p>
         </div>
 
         <div class="adv-card">
-          <div class="adv-icon-wrap">🏷️</div>
-          <h3 class="adv-title">Честный и прозрачный прайс</h3>
-          <p class="adv-desc">Фиксированные цены на все процедуры без скрытых доплат. Точная стоимость известна вам до начала работы мастера.</p>
+          <div class="adv-icon-wrap">🌿</div>
+          <h3 class="adv-title">Бережные красители & уход</h3>
+          <p class="adv-desc">Работаем на деликатных составах, сохраняющих естественную плотность, гладкость и блеск волос без ломкости.</p>
         </div>
 
         <div class="adv-card">
-          <div class="adv-icon-wrap">🛡️</div>
-          <h3 class="adv-title">Стерильность СанПиН</h3>
-          <p class="adv-desc">Трехэтапная обработка инструментов, сухожар, индивидуальные одноразовые расходники и вскрытие крафт-пакета при вас.</p>
+          <div class="adv-icon-wrap">📐</div>
+          <h3 class="adv-title">Точная геометрия стрижки</h3>
+          <p class="adv-desc">Подбираем форму стрижки и бороды с учетом формы лица, структуры волоса и того, как они лежат в повседневной жизни.</p>
         </div>
 
         <div class="adv-card">
           <div class="adv-icon-wrap">⚡</div>
-          <h3 class="adv-title">Удобная локация и запись</h3>
-          <p class="adv-desc">Наурызбайский район, ЖК Alma City на ул. Жунисова. Быстрая запись через WhatsApp в один клик без звонков.</p>
+          <h3 class="adv-title">Быстрая запись в 1 клик</h3>
+          <p class="adv-desc">ЖК Alma City на ул. Жунисова. Выбирайте удобное время и записывайтесь прямо в WhatsApp без долгих ожиданий.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES & PRICING -->
+  <!-- SERVICES & PRICING (HAIR ONLY) -->
   <section class="pricing" id="services">
     <div class="container">
       <div class="section-header">
         <div class="section-badge">Каталог услуг</div>
-        <h2 class="section-title">Прайс-лист салона Chispa</h2>
-        <p class="section-desc">Выберите интересующее направление или воспользуйтесь быстрым поиском по названию процедуры.</p>
+        <h2 class="section-title">Прайс-лист на услуги для волос</h2>
+        <p class="section-desc">Все процедуры для женщин и мужчин: от модельных стрижек и брашинга до сложного окрашивания и ухода за бородой.</p>
       </div>
 
       <!-- TABS NAVIGATION -->
       <div class="tabs-nav">
-        <button class="tab-btn active" onclick="switchTab('nails')">💅 Ногтевой сервис (18)</button>
-        <button class="tab-btn" onclick="switchTab('lashes')">👁️ Ресницы / Lash Bar (10)</button>
-        <button class="tab-btn" onclick="switchTab('brows')">✨ Брови / Brow Bar (6)</button>
-        <button class="tab-btn" onclick="switchTab('barber')">✂️ Мужской зал & Барбер (12)</button>
+        <button class="tab-btn active" onclick="switchTab('barber')">✂️ Мужской зал & Барбершоп (11)</button>
+        <button class="tab-btn" onclick="switchTab('women-hair')">💇‍♀️ Женские стрижки & Укладки (6)</button>
+        <button class="tab-btn" onclick="switchTab('color-care')">✨ Колористика & Уход за волосами (7)</button>
       </div>
 
       <!-- SEARCH INPUT -->
       <div class="search-wrap">
         <span class="search-icon">🔍</span>
-        <input type="text" id="serviceSearch" class="search-input" placeholder="Поиск услуги (например: маникюр, 2D, борода)..." oninput="filterServices()">
+        <input type="text" id="serviceSearch" class="search-input" placeholder="Поиск (например: фейд, борода, окрашивание, брашинг)..." oninput="filterServices()">
       </div>
 
-      <!-- TAB 1: NAILS (18 SERVICES) -->
-      <div id="tab-nails" class="tab-content active">
-        <div class="services-grid">
-          
-          <div class="service-card" data-title="маникюр с гель покрытием гель-лак">
-            <div class="service-head">
-              <h4 class="service-title">Маникюр с гель-покрытием</h4>
-              <span class="service-hit-badge">Хит</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 час</span>
-              <span>Комби/аппаратный + выравнивание</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">7 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%9C%D0%B0%D0%BD%D0%B8%D0%BA%D1%8E%D1%80%20%D1%81%20%D0%B3%D0%B5%D0%BB%D1%8C-%D0%BF%D0%BE%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D0%B5%D0%BC%20(7%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="комплекс маникюр педикюр в 4 руки">
-            <div class="service-head">
-              <h4 class="service-title">Комплекс «Маникюр + Педикюр»</h4>
-              <span class="service-hit-badge">Выгодно</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 час</span>
-              <span>Полная обработка пальчиков и стоп</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">17 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%9C%D0%B0%D0%BD%D0%B8%D0%BA%D1%8E%D1%80%20%2B%20%D0%9F%D0%B5%D0%B4%D0%B8%D0%BA%D1%8E%D1%80%20(17%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="маникюр аппаратный">
-            <div class="service-head">
-              <h4 class="service-title">Маникюр аппаратный</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~40 мин</span>
-              <span>Чистка кутикулы и придание формы</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">4 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%90%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D0%BD%D0%B8%D0%BA%D1%8E%D1%80%20(4%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="маникюр без гель покрытия">
-            <div class="service-head">
-              <h4 class="service-title">Маникюр без гель-покрытия</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~30 мин</span>
-              <span>Гигиенический уход и полировка</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">4 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%9C%D0%B0%D0%BD%D0%B8%D0%BA%D1%8E%D1%80%20%D0%B1%D0%B5%D0%B7%20%D0%BF%D0%BE%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D1%8F%20(4%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="маникюр классический гель">
-            <div class="service-head">
-              <h4 class="service-title">Маникюр классический с гелем</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 час</span>
-              <span>Классическая обработка + гель</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">7 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BC%D0%B0%D0%BD%D0%B8%D0%BA%D1%8E%D1%80%20(7%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="коррекция ногтей рук">
-            <div class="service-head">
-              <h4 class="service-title">Коррекция ногтей рук</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 час</span>
-              <span>Восстановление архитектуры и длины</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">8 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%9A%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8E%20%D0%BD%D0%BE%D0%B3%D1%82%D0%B5%D0%B9%20(8%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="педикюр аппаратный">
-            <div class="service-head">
-              <h4 class="service-title">Педикюр аппаратный</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 час</span>
-              <span>Гигиеническая обработка стоп и пальцев</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">8 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%90%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%B5%D0%B4%D0%B8%D0%BA%D1%8E%D1%80%20(8%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="педикюр аппаратный с гелевым покрытием">
-            <div class="service-head">
-              <h4 class="service-title">Педикюр аппаратный + гель</h4>
-              <span class="service-hit-badge">Топ</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 час</span>
-              <span>Полная обработка + стойкий гель-лак</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">от 8 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%9F%D0%B5%D0%B4%D0%B8%D0%BA%D1%8E%D1%80%20%D1%81%20%D0%B3%D0%B5%D0%BB%D0%B5%D0%BC" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="наращивание ногтей до средней длины">
-            <div class="service-head">
-              <h4 class="service-title">Наращивание ногтей</h4>
-              <span class="service-hit-badge">Хит</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 ч. 55 мин.</span>
-              <span>Моделирование формы до средней длины</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">от 10 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%9D%D0%B0%D1%80%D0%B0%D1%89%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%BE%D0%B3%D1%82%D0%B5%D0%B9" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="гелевое наращивание ногтей">
-            <div class="service-head">
-              <h4 class="service-title">Гелевое наращивание ногтей</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 ч. 30 мин.</span>
-              <span>Прочное наращивание на верхние/нижние формы</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">от 10 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%93%D0%B5%D0%BB%D0%B5%D0%B2%D0%BE%D0%B5%20%D0%BD%D0%B0%D1%80%D0%B0%D1%89%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="френч дизайн ногтей">
-            <div class="service-head">
-              <h4 class="service-title">Дизайн «Френч»</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~10 мин</span>
-              <span>Классическая или цветная улыбка</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">1 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%A4%D1%80%D0%B5%D0%BD%D1%87" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="дизайн кошачий глаз">
-            <div class="service-head">
-              <h4 class="service-title">Дизайн «Кошачий глаз»</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~10 мин</span>
-              <span>Глубокий магнитный блик</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">1 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%9A%D0%BE%D1%88%D0%B0%D1%87%D0%B8%D0%B9%20%D0%B3%D0%BB%D0%B0%D0%B7" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="втирка зеркальная жемчужная">
-            <div class="service-head">
-              <h4 class="service-title">Втирка (жемчуг, зеркало)</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~10 мин</span>
-              <span>Зеркальное или жемчужное сияние</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">1 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%92%D1%82%D0%B8%D1%80%D0%BA%D1%83" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="стемпинг дизайн">
-            <div class="service-head">
-              <h4 class="service-title">Стемпинг дизайн</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~15 мин</span>
-              <span>Четкие узоры и принты</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">от 1 500 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%A1%D1%82%D0%B5%D0%BC%D0%BF%D0%B8%D0%BD%D0%B3" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="авторский дизайн ногтей">
-            <div class="service-head">
-              <h4 class="service-title">Авторский дизайн ногтей</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~30–60 мин</span>
-              <span>Геометрия, абстракция, волны, стразы</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">от 1 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B0%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%20%D0%BD%D0%BE%D0%B3%D1%82%D0%B5%D0%B9" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-
-          <div class="service-card" data-title="коррекция наращивания ногтей">
-            <div class="service-head">
-              <h4 class="service-title">Коррекция наращивания ногтей</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~2 часа</span>
-              <span>Снятие длины, поднятие клюющих, опил формы</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">8 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D0%9A%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8E%20%D0%BD%D0%B0%D1%80%D0%B0%D1%89%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20(8%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="снятие гель лака покрытия">
-            <div class="service-head">
-              <h4 class="service-title">Снятие гель-лака / покрытия</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~20 мин</span>
-              <span>Безопасное аппаратное снятие фрезой</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">1 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A1%D0%BD%D1%8F%D1%82%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%BA%D1%80%D1%8B%D1%82%D0%B8%D1%8F" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="ремонт ногтей">
-            <div class="service-head">
-              <h4 class="service-title">Ремонт ногтя</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~20 мин</span>
-              <span>Донаращивание уголка, трещина</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">500 – 1 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9D%D1%83%D0%B6%D0%B5%D0%BD%20%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BD%D0%BE%D0%B3%D1%82%D1%8F" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- TAB 2: LASHES (10 SERVICES) -->
-      <div id="tab-lashes" class="tab-content">
-        <div class="services-grid">
-          
-          <div class="service-card" data-title="наращивание ресниц 2d">
-            <div class="service-head">
-              <h4 class="service-title">Наращивание ресниц 2D</h4>
-              <span class="service-hit-badge">Топ выбор</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 ч. 20 мин.</span>
-              <span>Невесомый бархатный объем</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">10 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%D1%80%D0%B0%D1%89%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86%202D%20(10%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="классическое наращивание ресниц 1d">
-            <div class="service-head">
-              <h4 class="service-title">Классическое наращивание</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 ч. 30 мин.</span>
-              <span>Естественный эффект накрашенных ресниц</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">8 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5%20%D0%BD%D0%B0%D1%80%D0%B0%D1%89%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86%20(8%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="наращивание ресниц 3d">
-            <div class="service-head">
-              <h4 class="service-title">Наращивание ресниц 3D</h4>
-              <span class="service-hit-badge">Объем</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 ч. 20 мин.</span>
-              <span>Глубокий выразительный взгляд</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">11 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%D1%80%D0%B0%D1%89%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86%203D%20(11%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="наращивание ресниц 4d голливуд">
-            <div class="service-head">
-              <h4 class="service-title">Наращивание ресниц 4D</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 ч. 25 мин.</span>
-              <span>Максимальная густота и пушистость</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">12 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%D1%80%D0%B0%D1%89%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86%204D%20(12%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="ламинирование ресниц ботокс">
-            <div class="service-head">
-              <h4 class="service-title">Ламинирование ресниц</h4>
-              <span class="service-hit-badge">Хит</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~35 мин</span>
-              <span>Завиток, кератиновый лифтинг и цвет</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">5 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%9B%D0%B0%D0%BC%D0%B8%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86%20(5%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="ламинирование ресниц премиум ботокс">
-            <div class="service-head">
-              <h4 class="service-title">Ламинирование ресниц (Премиум)</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~45 мин</span>
-              <span>Интенсивный ботокс-уход и стойкий пигмент</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">7 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%9F%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC%20%D0%BB%D0%B0%D0%BC%D0%B8%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86%20(7%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="покраска ресниц">
-            <div class="service-head">
-              <h4 class="service-title">Покраска ресниц</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~15 мин</span>
-              <span>Стойкое окрашивание в черный цвет</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">3 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BA%D1%80%D0%B0%D1%81%D0%BA%D1%83%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86%20(3%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="коррекция ресниц">
-            <div class="service-head">
-              <h4 class="service-title">Коррекция наращенных ресниц</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 час</span>
-              <span>Заполнение пробелов и обновление ряда</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">от 5 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9A%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="эффекты ресниц мокрый лучики">
-            <div class="service-head">
-              <h4 class="service-title">Трендовые эффекты (лучи, мокрый)</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~5 мин</span>
-              <span>Мокрый эффект, лучи, стрелка</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">+1 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86%D1%8B%20%D1%81%20%D1%8D%D1%84%D1%84%D0%B5%D0%BA%D1%82%D0%BE%D0%BC" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="изгибы ресниц l m">
-            <div class="service-head">
-              <h4 class="service-title">Специальные изгибы (L, M)</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~5 мин</span>
-              <span>Идеально для нависшего века и стрелки</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">+1 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%80%D0%B5%D1%81%D0%BD%D0%B8%D1%86%D1%8B%20%D0%B8%D0%B7%D0%B3%D0%B8%D0%B1%20L/M" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- TAB 3: BROWS (6 SERVICES) -->
-      <div id="tab-brows" class="tab-content">
-        <div class="services-grid">
-          
-          <div class="service-card" data-title="коррекция бровей форма архитектура">
-            <div class="service-head">
-              <h4 class="service-title">Архитектура & Коррекция формы</h4>
-              <span class="service-hit-badge">Топ</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~20 мин</span>
-              <span>Построение формы под геометрию лица</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">4 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D0%90%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D1%83%20%D0%B1%D1%80%D0%BE%D0%B2%D0%B5%D0%B9%20(4%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="ламинирование бровей комплекс уход">
-            <div class="service-head">
-              <h4 class="service-title">Ламинирование бровей (Комплекс)</h4>
-              <span class="service-hit-badge">Хит</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~45 мин</span>
-              <span>Долговременная укладка + окрашивание + уход</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">7 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%20%D0%BB%D0%B0%D0%BC%D0%B8%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D0%B1%D1%80%D0%BE%D0%B2%D0%B5%D0%B9%20(7%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="ламинирование бровей долговременная укладка">
-            <div class="service-head">
-              <h4 class="service-title">Ламинирование бровей (Базовое)</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~20 мин</span>
-              <span>Укрощение жестких непослушных волосков</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">5 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%9B%D0%B0%D0%BC%D0%B8%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B1%D1%80%D0%BE%D0%B2%D0%B5%D0%B9%20(5%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="окрашивание бровей краской">
-            <div class="service-head">
-              <h4 class="service-title">Окрашивание бровей краской</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~15 мин</span>
-              <span>Подбор мягкого естественного оттенка</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">3 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%9E%D0%BA%D1%80%D0%B0%D1%88%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B1%D1%80%D0%BE%D0%B2%D0%B5%D0%B9%20(3%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="коррекция бровей воском">
-            <div class="service-head">
-              <h4 class="service-title">Коррекция бровей воском</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~15 мин</span>
-              <span>Быстрое удаление пушкового волоса</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">3 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9A%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D0%B1%D1%80%D0%BE%D0%B2%D0%B5%D0%B9%20%D0%B2%D0%BE%D1%81%D0%BA%D0%BE%D0%BC" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="коррекция бровей пинцетом">
-            <div class="service-head">
-              <h4 class="service-title">Коррекция бровей пинцетом</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~15 мин</span>
-              <span>Классическая точечная проработка линий</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">3 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9A%D0%BE%D1%80%D1%80%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%20%D0%B1%D1%80%D0%BE%D0%B2%D0%B5%D0%B9%20%D0%BF%D0%B8%D0%BD%D1%86%D0%B5%D1%82%D0%BE%D0%BC" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- TAB 4: BARBERSHOP (12 SERVICES) -->
-      <div id="tab-barber" class="tab-content">
+      <!-- TAB 1: BARBERSHOP (11 SERVICES) -->
+      <div id="tab-barber" class="tab-content active">
         <div class="services-grid">
           
           <div class="service-card" data-title="мужская стрижка фейд ножницы">
@@ -2000,13 +1477,41 @@
             </div>
           </div>
 
+          <div class="service-card" data-title="детская стрижка">
+            <div class="service-head">
+              <h4 class="service-title">Детская стрижка</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~30 мин</span>
+              <span>Аккуратный образ для мальчиков до 12 лет</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">3 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%BD%D0%B0%20%D0%94%D0%B5%D1%82%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83%20(3%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="стрижка под машинкой">
+            <div class="service-head">
+              <h4 class="service-title">Стрижка под машинку</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~20 мин</span>
+              <span>1–2 насадки с четкой окантовкой</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 4 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A1%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D0%B0%20%D0%BF%D0%BE%D0%B4%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BA%D1%83" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
           <div class="service-card" data-title="королевское бритье">
             <div class="service-head">
               <h4 class="service-title">Королевское бритье</h4>
             </div>
             <div class="service-meta">
               <span>⏱️ ~30 мин</span>
-              <span>Традиционное распаривание и опасное бритье</span>
+              <span>Распаривание кожи, пена и бритье шаветкой</span>
             </div>
             <div class="service-foot">
               <span class="service-price">5 000 ₸</span>
@@ -2028,49 +1533,6 @@
             </div>
           </div>
 
-          <div class="service-card" data-title="детская стрижка">
-            <div class="service-head">
-              <h4 class="service-title">Детская стрижка</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~30 мин</span>
-              <span>Аккуратный стильный образ для юных джентльменов</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">3 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%BD%D0%B0%20%D0%94%D0%B5%D1%82%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83%20(3%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="комбо отец сын стрижка">
-            <div class="service-head">
-              <h4 class="service-title">Комбо «Отец + Сын»</h4>
-              <span class="service-hit-badge">Семья</span>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~1 ч. 30 мин.</span>
-              <span>Совместная стрижка для папы и ребенка</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">от 7 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%82%D0%B8%D0%BC%20%D0%BD%D0%B0%20%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE%20%D0%9E%D1%82%D0%B5%D1%86%2B%D0%A1%D1%8B%D0%BD" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
-          <div class="service-card" data-title="стрижка под машинкой">
-            <div class="service-head">
-              <h4 class="service-title">Стрижка под машинку</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~20 мин</span>
-              <span>1–2 насадки с окантовкой</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">от 4 000 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A1%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D0%B0%20%D0%BF%D0%BE%D0%B4%20%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%BA%D1%83" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
           <div class="service-card" data-title="камуфляж седины борода">
             <div class="service-head">
               <h4 class="service-title">Камуфляж бороды (тонирование)</h4>
@@ -2082,6 +1544,21 @@
             <div class="service-foot">
               <span class="service-price">3 000 ₸</span>
               <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9A%D0%B0%D0%BC%D1%83%D1%84%D0%BB%D1%8F%D0%B6%20%D0%B1%D0%BE%D1%80%D0%BE%D0%B4%D1%8B" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="комбо отец сын стрижка">
+            <div class="service-head">
+              <h4 class="service-title">Комбо «Отец + Сын»</h4>
+              <span class="service-hit-badge">Семья</span>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~1 ч. 30 мин.</span>
+              <span>Совместная стрижка для папы и сына</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 7 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%82%D0%B8%D0%BC%20%D0%BD%D0%B0%20%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE%20%D0%9E%D1%82%D0%B5%D1%86%2B%D0%A1%D1%8B%D0%BD" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
             </div>
           </div>
 
@@ -2099,27 +1576,13 @@
             </div>
           </div>
 
-          <div class="service-card" data-title="уход за лицом мужская маска">
-            <div class="service-head">
-              <h4 class="service-title">Мужской уход (Черная маска)</h4>
-            </div>
-            <div class="service-meta">
-              <span>⏱️ ~40 мин</span>
-              <span>Глубокое очищение пор и тонизирование кожи</span>
-            </div>
-            <div class="service-foot">
-              <span class="service-price">2 500 ₸</span>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D0%B0%D1%81%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%BB%D0%B8%D1%86%D0%B0" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
-            </div>
-          </div>
-
           <div class="service-card" data-title="укладка волос мужская">
             <div class="service-head">
               <h4 class="service-title">Мужская укладка волос</h4>
             </div>
             <div class="service-meta">
               <span>⏱️ ~20 мин</span>
-              <span>Стайлинг глиной, помадой или пастой</span>
+              <span>Стайлинг матовой глиной, помадой или пастой</span>
             </div>
             <div class="service-foot">
               <span class="service-price">2 000 ₸</span>
@@ -2130,79 +1593,281 @@
         </div>
       </div>
 
+      <!-- TAB 2: WOMEN'S HAIRCUTS & STYLING (6 SERVICES) -->
+      <div id="tab-women-hair" class="tab-content">
+        <div class="services-grid">
+          
+          <div class="service-card" data-title="женская стрижка модельная каре каскад">
+            <div class="service-head">
+              <h4 class="service-title">Женская модельная стрижка</h4>
+              <span class="service-hit-badge">Хит</span>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~1 час</span>
+              <span>Мытье, стрижка (каре, каскад, боб), сушка</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 6 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%96%D0%B5%D0%BD%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83%20(6%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="укладка на брашинг объем">
+            <div class="service-head">
+              <h4 class="service-title">Укладка на брашинг</h4>
+              <span class="service-hit-badge">Топ</span>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~45 мин</span>
+              <span>Прикорневой объем, гладкость и форма концов</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 4 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D0%A3%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D1%83%20%D0%BD%D0%B0%20%D0%B1%D1%80%D0%B0%D1%88%D0%B8%D0%BD%D0%B3" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="вечерняя укладка локоны волны">
+            <div class="service-head">
+              <h4 class="service-title">Коктейльная укладка & Локоны</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~1 час</span>
+              <span>Голливудские волны, текстурные пляжные локоны</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 7 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D0%A3%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D1%83%20%D0%BB%D0%BE%D0%BA%D0%BE%D0%BD%D1%8B" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="стрижка кончиков ровный срез">
+            <div class="service-head">
+              <h4 class="service-title">Стрижка кончиков (ровный срез)</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~30 мин</span>
+              <span>Освежение длины, плотный аккуратный срез</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">4 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A1%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%D0%BE%D0%B2" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="оформление челки шторка">
+            <div class="service-head">
+              <h4 class="service-title">Оформление челки (шторка / прямая)</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~20 мин</span>
+              <span>Моделирование трендовой челки под тип лица</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">2 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9E%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%87%D0%B5%D0%BB%D0%BA%D0%B8" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="мытье головы сушка феном">
+            <div class="service-head">
+              <h4 class="service-title">Мытье головы + сушка феном</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~30 мин</span>
+              <span>Профессиональный шампунь, кондиционер и сушка</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">3 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9C%D1%8B%D1%82%D1%8C%D0%B5%20%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D1%8B%20%D0%B8%20%D1%81%D1%83%D1%88%D0%BA%D0%B0" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TAB 3: COLORING & HAIR CARE (7 SERVICES) -->
+      <div id="tab-color-care" class="tab-content">
+        <div class="services-grid">
+          
+          <div class="service-card" data-title="сложное окрашивание airtouch шатуш балаяж">
+            <div class="service-head">
+              <h4 class="service-title">Сложное окрашивание (Airtouch / Шатуш)</h4>
+              <span class="service-hit-badge">Премиум</span>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~3–4 часа</span>
+              <span>Плавная растушевка от корней, мягкий рельеф</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 20 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BF%D1%80%D0%BE%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BF%D0%BE%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%BC%D1%83%20%D0%BE%D0%BA%D1%80%D0%B0%D1%88%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E%20%D0%B2%20Chispa" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="окрашивание в один тон">
+            <div class="service-head">
+              <h4 class="service-title">Окрашивание в один тон</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~2 часа</span>
+              <span>Глубокий насыщенный цвет и 100% закрашивание седины</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 12 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9E%D0%BA%D1%80%D0%B0%D1%88%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D0%BE%D0%B4%D0%B8%D0%BD%20%D1%82%D0%BE%D0%BD" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="тонирование волос">
+            <div class="service-head">
+              <h4 class="service-title">Тонирование волос</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~1.5 часа</span>
+              <span>Нейтрализация желтизны, холодный блонд или глянец</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 8 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A2%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%BE%D0%BB%D0%BE%D1%81" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="окрашивание корней волос">
+            <div class="service-head">
+              <h4 class="service-title">Окрашивание корней</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~1.5 часа</span>
+              <span>Точное попадание в цвет по длине, мягкая граница</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 7 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9E%D0%BA%D1%80%D0%B0%D1%88%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="ботокс кератин выпрямление волос">
+            <div class="service-head">
+              <h4 class="service-title">Кератин / Ботокс для волос</h4>
+              <span class="service-hit-badge">Глянец</span>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~2.5 часа</span>
+              <span>Гладкость шелка, устранение пуха и зеркальный блеск</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 15 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%91%D0%BE%D1%82%D0%BE%D0%BA%D1%81%20%D0%B8%D0%BB%D0%B8%20%D0%BA%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%BD%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%BE%D0%BB%D0%BE%D1%81" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="спа уход реконструкция волос">
+            <div class="service-head">
+              <h4 class="service-title">Глубокий спа-уход & Реконструкция</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~1 час</span>
+              <span>Интенсивное питание пористых и осветленных волос</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 8 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A1%D0%BF%D0%B0-%D1%83%D1%85%D0%BE%D0%B4%20%D0%B4%D0%BB%D1%8F%20%D0%B2%D0%BE%D0%BB%D0%BE%D1%81" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+          <div class="service-card" data-title="выход из темного смывка">
+            <div class="service-head">
+              <h4 class="service-title">Выход из темного (декапирование)</h4>
+            </div>
+            <div class="service-meta">
+              <span>⏱️ ~4–5 часов</span>
+              <span>Бережное пошаговое осветление без разрушения структуры</span>
+            </div>
+            <div class="service-foot">
+              <span class="service-price">от 25 000 ₸</span>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%92%D1%8B%D1%85%D0%BE%D0%B4%20%D0%B8%D0%B7%20%D1%87%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%86%D0%B2%D0%B5%D1%82%D0%B0" target="_blank" rel="noopener" class="btn btn-gold service-book-btn">Записаться</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- WORKS / PORTFOLIO -->
+  <!-- WORKS / PORTFOLIO (3 GENERATED HAIR VISUALS, NO FACES) -->
   <section class="works" id="works">
     <div class="container">
       <div class="section-header">
-        <div class="section-badge">Галерея</div>
+        <div class="section-badge">Галерея работ</div>
         <h2 class="section-title">Примеры работ: Стрижки & Волосы</h2>
-        <p class="section-desc">Женские стрижки, укладки, сложное окрашивание и мужской барберинг от мастеров Chispa. Нажмите для увеличения.</p>
+        <p class="section-desc">Сложное окрашивание, женские объемные стрижки и мужской фейд-барберинг. Нажмите для увеличения детализации.</p>
       </div>
 
       <div class="works-grid">
-        <!-- WORK 1: WOMEN'S HAIRCUT & BRUSHING -->
-        <div class="work-item">
-          <div class="work-media">
-            <span class="work-tag">💇‍♀️ Стрижка & Брашинг</span>
-            <img src="assets/work_hair_1.jpg" alt="Женская стрижка и объемная укладка Chispa" class="work-img">
-            <div class="zoom-hint"><span>🔍</span> Увеличить фото</div>
-          </div>
-          <div class="work-body">
-            <h3 class="work-title">Женская стрижка & Объемный брашинг</h3>
-            <p class="work-desc">Текстурная форма, оформление мягких слоев и челки, стойкая воздушная укладка на брашинг с термозащитой.</p>
-            <div class="work-foot">
-              <div class="work-price-block">
-                <span class="work-price">от 6 000 ₸</span>
-                <span class="work-time">~1 час</span>
-              </div>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83%20%D0%B8%20%D1%83%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D1%83%20%D0%B2%20Chispa" target="_blank" rel="noopener" class="btn btn-gold work-btn">Хочу так</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- WORK 2: COLORING & BLONDE REPAIR -->
+        
+        <!-- WORK 1: BALAYAGE WAVES -->
         <div class="work-item">
           <div class="work-media">
             <span class="work-tag">✨ Сложное окрашивание</span>
-            <img src="assets/work_hair_3.jpg" alt="Сложное окрашивание и тонирование Chispa" class="work-img">
+            <img src="assets/work_hair_balayage.jpg" alt="Карамельный балаяж и волны Chispa" class="work-img">
             <div class="zoom-hint"><span>🔍</span> Увеличить фото</div>
           </div>
           <div class="work-body">
-            <h3 class="work-title">Сложное окрашивание & Блонд-уход</h3>
-            <p class="work-desc">Плавная растяжка тона, естественный перелив прядей, глубокое кератиновое восстановление и зеркальный блеск.</p>
+            <h3 class="work-title">Сложное окрашивание & Balayage Waves</h3>
+            <p class="work-desc">Плавные медово-карамельные пряди на глубокой темной базе. Естественный мягкий переход и сияющая волнистая укладка.</p>
             <div class="work-foot">
               <div class="work-price-block">
                 <span class="work-price">от 20 000 ₸</span>
                 <span class="work-time">~3–4 часа</span>
               </div>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%BA%D1%80%D0%B0%D1%88%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%20%D0%B2%20Chispa" target="_blank" rel="noopener" class="btn btn-gold work-btn">Хочу так</a>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%81%D0%BB%D0%BE%D0%B6%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%BA%D1%80%D0%B0%D1%88%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B2%20Chispa" target="_blank" rel="noopener" class="btn btn-gold work-btn">Хочу так</a>
             </div>
           </div>
         </div>
 
-        <!-- WORK 3: BARBER FADE & BEARD -->
+        <!-- WORK 2: LAYERED BLOWOUT -->
         <div class="work-item">
           <div class="work-media">
-            <span class="work-tag">✂️ Chispa Barbershop</span>
-            <img src="assets/work_barber_haircut.jpg" alt="Мужская стрижка и борода Chispa Barbershop" class="work-img">
+            <span class="work-tag">💇‍♀️ Стрижка & Укладка</span>
+            <img src="assets/work_hair_blowout.jpg" alt="Каскадная стрижка и зеркальный брашинг Chispa" class="work-img">
             <div class="zoom-hint"><span>🔍</span> Увеличить фото</div>
           </div>
           <div class="work-body">
-            <h3 class="work-title">Стрижка Fade & Оформление бороды</h3>
-            <p class="work-desc">Идеальный дымчатый переход Fade, точная окантовка шейвером, моделирование контура бороды и мужской стайлинг.</p>
+            <h3 class="work-title">Каскадная стрижка & Зеркальный брашинг</h3>
+            <p class="work-desc">Текстурные подвижные слои, плотный ровный срез и воздушная укладка на брашинг с эффектом стеклянного блеска волос.</p>
             <div class="work-foot">
               <div class="work-price-block">
-                <span class="work-price">7 000 ₸</span>
+                <span class="work-price">от 6 000 ₸</span>
                 <span class="work-time">~1 час</span>
               </div>
-              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83%20%D0%B8%20%D0%B1%D0%BE%D1%80%D0%BE%D0%B4%D1%83%20(7%20000%20%E2%82%B8)" target="_blank" rel="noopener" class="btn btn-gold work-btn">Хочу так</a>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D0%B6%D0%B5%D0%BD%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83%20%D0%B8%20%D1%83%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D1%83%20%D0%B2%20Chispa" target="_blank" rel="noopener" class="btn btn-gold work-btn">Хочу так</a>
             </div>
           </div>
         </div>
-</div>
+
+        <!-- WORK 3: BARBER SKIN FADE -->
+        <div class="work-item">
+          <div class="work-media">
+            <span class="work-tag">✂️ Chispa Barbershop</span>
+            <img src="assets/work_barber_fade.jpg" alt="Мужская стрижка Skin Fade Chispa Barbershop" class="work-img">
+            <div class="zoom-hint"><span>🔍</span> Увеличить фото</div>
+          </div>
+          <div class="work-body">
+            <h3 class="work-title">Мужской Skin Fade & Чистая окантовка</h3>
+            <p class="work-desc">Идеальный плавный переход от нуля, лазерная четкость линии шеи и висков, текстурный верх с легким матовым стайлингом.</p>
+            <div class="work-foot">
+              <div class="work-price-block">
+                <span class="work-price">5 000 – 7 000 ₸</span>
+                <span class="work-time">~1 час</span>
+              </div>
+              <a href="https://wa.me/77755499969?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D1%83%D1%8E%20%D1%81%D1%82%D1%80%D0%B8%D0%B6%D0%BA%D1%83%20Fade%20%D0%B2%20Chispa" target="_blank" rel="noopener" class="btn btn-gold work-btn">Хочу так</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -2211,7 +1876,7 @@
     <div class="container">
       <div class="section-header">
         <div class="section-badge">Контакты</div>
-        <h2 class="section-title">Ждем вас в салоне Chispa</h2>
+        <h2 class="section-title">Ждем вас в студии Chispa</h2>
         <p class="section-desc">Удобное расположение в микрорайоне Шугыла, ЖК Alma City. Принимаем ежедневно по предварительной записи.</p>
       </div>
 
@@ -2224,7 +1889,7 @@
               <img src="assets/chispa_logo.jpg" alt="Chispa Logo" class="logo-img">
               <div class="brand-text-block">
                 <span class="brand-name">CHISPA</span>
-                <span class="brand-sub">Салон красоты & Барбершоп</span>
+                <span class="brand-sub">Студия волос & Барбершоп</span>
               </div>
             </div>
 
@@ -2260,8 +1925,6 @@
                   </div>
                 </div>
               </div>
-
-              
             </div>
           </div>
 
@@ -2286,7 +1949,7 @@
             <img src="assets/salon_interior.jpg" alt="Интерьер Chispa" class="map-bg-img">
             <div class="map-pin-box">
               <span class="map-pin-icon">📍</span>
-              <strong style="color: #fff; font-size: 16px;">Салон красоты & Барбершоп Chispa</strong>
+              <strong style="color: #fff; font-size: 16px;">Студия волос & Барбершоп Chispa</strong>
               <span style="color: var(--text-muted); font-size: 13px;">ул. Сакена Жунисова, 2/23 к5 (1 этаж)</span>
               <a href="https://2gis.kz/almaty/firm/70000001117127302" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top: 6px; padding: 8px 18px; font-size: 13px;">
                 Построить маршрут в 2ГИС
@@ -2315,15 +1978,14 @@
           <span class="brand-name">CHISPA</span>
         </div>
         <ul class="footer-nav">
-          <li><a href="#services">Услуги и цены</a></li>
+          <li><a href="#services">Услуги волос</a></li>
           <li><a href="#advantages">Преимущества</a></li>
           <li><a href="#works">Галерея работ</a></li>
           <li><a href="#contacts">Контакты</a></li>
           <li><a href="https://2gis.kz/almaty/firm/70000001117127302" target="_blank" rel="noopener">2ГИС</a></li>
-          
         </ul>
         <p class="footer-copy">
-          © 2026 Chispa Beauty Space & Barbershop. Алматы, ул. Сакена Жунисова, 2/23 к5.<br>
+          © 2026 Chispa Hair Space & Barbershop. Алматы, ул. Сакена Жунисова, 2/23 к5.<br>
           Все права защищены. Запись по телефону и WhatsApp: +7 775 549 9969.
         </p>
       </div>
