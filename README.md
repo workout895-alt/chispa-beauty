@@ -4,7 +4,6 @@
 
 - **Сайт (GitHub Pages):** [https://workout895-alt.github.io/chispa-beauty/](https://workout895-alt.github.io/chispa-beauty/)
 - **Карточка в 2ГИС:** [2ГИС Алматы](https://2gis.kz/almaty/firm/70000001117127302)
-- **Instagram:** [@chispa.almaty](https://www.instagram.com/chispa.almaty)
 - **WhatsApp:** [+7 775 549 9969](https://wa.me/77755499969)
 - **Адрес:** Казахстан, г. Алматы, Наурызбайский район, мкр. Шугыла, ул. Сакена Жунисова, 2/23, корпус 5 (1 этаж, ЖК Alma City)
 - **График работы:** Ежедневно с 10:00 до 21:00
